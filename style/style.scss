@@ -19,14 +19,16 @@
 }
 
 .home,
-.about {
+.about,
+.contact {
   height: 90vh;
   position: absolute;
   width: 100%;
 }
 
 .home-content,
-.about-content {
+.about-content,
+.contact {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -68,5 +70,20 @@
     to right,
     #93291e,
     #ed213a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.contact {
+  background: #1fa2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
